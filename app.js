@@ -24,18 +24,12 @@ app.use(session({
 
 }))
 app.use(express.json())
-// var pool = mysql.createConnection({
-//     host: 'us-cdbr-east-06.cleardb.net',
-//     user: 'b5aa41746ad49a',
-//     password: '36d1ff1b',
-//     database: 'heroku_c8dbdf39cf1ee77'
 
-// });
 var pool = mysql.createConnection({
-    host: 'primepine.c8lyjv48pfux.us-east-1.rds.amazonaws.com',
-    user: 'primepine',
-    password: 'primepine',
-    database: 'primepine'
+    host: '',
+    user: '',
+    password: '',
+    database: ''
 
 });
 app.get('/', (req,res)=>{
