@@ -66,8 +66,8 @@ app.post('/register', (req,res)=>{
                             port: 465,
                             secure: true, // use SSL
                             auth: {
-                            user: 'ayotundebalogun4@gmail.com',
-                            pass: 'guupaoutzqtyqlrw'
+                            user: '',
+                            pass: ''
                             }
                         });
                           // create the email message
@@ -194,7 +194,7 @@ app.post('/plantransaction', (req,res)=>{
         callback_url:`http://100.26.255.115/dashboard/${planDetails.email}`,
         method: 'POST',
         headers: {
-            Authorization: 'Bearer sk_test_400c560ff2c2322d29d6d527cef8284f87552368',
+            Authorization: '',
             'Content-Type': 'application/json'
         }
     }
